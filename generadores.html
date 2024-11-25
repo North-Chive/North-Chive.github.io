@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generadores - Friifire</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="generadores.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Friifire</div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="regedit.html">Regedit</a>
+      <a href="macro.html">Macro</a>
+      <a href="aplicaciones.html">Aplicaciones</a>
+      <a href="cuentas-veteranas.html">Cuentas Veteranas</a>
+      <a href="generadores.html" class="active">Generadores</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-banner">
+      <h1>Generadores de Recursos</h1>
+      <p>Simula la generación de recursos como diamantes, skins y más.</p>
+    </section>
+
+  <!-- Generador Formulario -->
+<section class="section generator">
+  <h2>Simulador de Generación</h2>
+  <form id="generator-form" class="centered-form">
+    <input type="text" id="player-name" placeholder="Nombre de Usuario" required />
+    <select id="resource-type" required>
+      <option value="">Seleccionar Recurso</option>
+      <option value="diamantes">Diamantes</option>
+      <option value="skins">Skins Exclusivas</option>
+      <option value="emotes">Emotes Especiales</option>
+    </select>
+    <input type="number" id="resource-amount" placeholder="Cantidad" required />
+    <button type="submit" class="btn">Generar</button>
+  </form>
+</section>
+
+<!-- Códigos Promocionales -->
+<section class="section promo-codes">
+  <h2>Códigos Promocionales</h2>
+  <p>Introduce un código promocional para desbloquear recursos exclusivos.</p>
+  <form id="promo-form" class="centered-form">
+    <input type="text" id="promo-code" placeholder="Código Promocional" required />
+    <button type="submit" class="btn">Validar Código</button>
+  </form>
+  <p id="promo-message"></p>
+</section>
+
+<!-- Resultados de Generación -->
+<section class="section results">
+  <h2>Recursos Generados</h2>
+  <ul id="generated-resources">
+    <!-- Resultados dinámicos -->
+  </ul>
+</section>
+

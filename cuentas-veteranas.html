@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuentas Veteranas - Free Fire</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cuentas-veteranas.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="logo">Free Fire</div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="regedit.html">Regedit</a>
+      <a href="macro.html">Macro</a>
+      <a href="aplicaciones.html">Aplicaciones</a>
+      <a href="cuentas-veteranas.html" class="active">Cuentas veteranas</a>
+      <a href="generadores.html">Generadores</a>
+    </nav>
+  </header>
+
+
+  <main class="main-content">
+    <!-- Sección Hero -->
+    <section class="hero-banner">
+      <h1>Cuentas Veteranas de Free Fire</h1>
+      <p>Consigue las mejores cuentas con rangos altos y skins exclusivas.</p>
+    </section>
+
+
+    <section class="section filters">
+      <h2>Busca una Cuenta</h2>
+      <div class="filter-options">
+        <select id="filter-rank">
+          <option value="">Seleccionar Rango</option>
+          <option value="Diamante">Diamante</option>
+          <option value="Heroico">Heroico</option>
+          <option value="Gran Maestro">Gran Maestro</option>
+        </select>
+        <select id="filter-region">
+          <option value="">Seleccionar Región</option>
+          <option value="LATAM">LATAM</option>
+          <option value="NA">Norteamérica</option>
+          <option value="EU">Europa</option>
+        </select>
+        <input type="number" id="filter-price" placeholder="Precio máximo ($)" />
+        <button id="apply-filters" class="btn">Aplicar Filtros</button>
+      </div>
+    </section>
+
+   <!-- Cuentas Destacadas -->
+<section class="section accounts">
+  <h2>Cuentas Destacadas</h2>
+  <div id="account-list" class="account-grid">
+    <!-- Las cuentas se agregarán dinámicamente aquí -->
+    <div class="account-card">
+      <h3>Cuenta 1</h3>
+      <p>Rango: Heroico</p>
+      <p>Precio: $50</p>
+    </div>
+    <div class="account-card">
+      <h3>Cuenta 2</h3>
+      <p>Rango: Diamante</p>
+      <p>Precio: $30</p>
+    </div>
+    <!-- Añadir más cuentas aquí -->
+  </div>
+</section>
+
+
+   <!-- Subir Cuenta -->
+<section class="section upload-account">
+  <h2>Sube Tu Cuenta</h2>
+  <form id="upload-account-form" class="form-container">
+    <input type="text" id="account-name" placeholder="Nombre de la cuenta" required />
+    <select id="account-rank" required>
+      <option value="">Seleccionar Rango</option>
+      <option value="Diamante">Diamante</option>
+      <option value="Heroico">Heroico</option>
+      <option value="Gran Maestro">Gran Maestro</option>
+    </select>
+    <input type="number" id="account-price" placeholder="Precio ($)" required />
+    <textarea id="account-description" placeholder="Descripción de la cuenta (skins, logros, etc.)" required></textarea>
+    <button type="submit" class="btn">Subir Cuenta</button>
+  </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00aaff;
+}
+
+.nav a.active {
+  color: #00aaff;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  background-color: #003366;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 20px;}
+
+/* General Section Styling */
+.section {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Buscador de Aplicaciones */
+#search-bar {
+  width: 60%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  display: block;
+  transition: border-color 0.3s ease;
+}
+
+#search-bar:focus {
+  border-color: #00aaff;
+}
+
+/* Featured Apps */
+.apps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app-card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-card h3 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.app-card .rating {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Botones */
+.btn {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+}
+
+/* Popular Apps */
+#popular-apps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

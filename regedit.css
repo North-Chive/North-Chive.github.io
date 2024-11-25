@@ -1,0 +1,211 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00aaff;
+} 
+.nav a.active {
+  color: #00aaff;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  background-color: #003366;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 20px;}
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+h1, h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* General Section Styling */
+.section {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+
+/* Slider Container Styling */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider-container label {
+  font-size: 16px;
+  color: #003366;
+}
+
+.slider-container input[type="range"] {
+  width: 70%;
+  max-width: 400px;
+}
+
+/* Feedback Form Styling */
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.centered-form label {
+  font-size: 16px;
+  color: #003366;
+}
+
+.centered-form input,
+.centered-form textarea {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.centered-form input:focus,
+.centered-form textarea:focus {
+  border-color: #00aaff;
+}
+
+.btn {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+}
+
+/* Beneficios */
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+  text-align: left;
+}
+
+.benefits li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #003366;
+  padding-left: 20px;
+  position: relative;
+}
+
+.benefits li::before {
+  content: "✔";
+  color: #00aaff;
+  position: absolute;
+  left: 0;
+}
+
+#benefits-list.hidden {
+  display: none;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

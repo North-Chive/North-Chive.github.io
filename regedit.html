@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regedit - Friifire</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="regedit.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">friifire</div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="regedit.html" class="active">Regedit</a>
+      <a href="macro.html">Macro</a>
+      <a href="aplicaciones.html">Aplicaciones</a>
+      <a href="cuentas-veteranas.html">Cuentas veteranas</a>
+      <a href="generadores.html">Generadores</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-banner">
+      <h1>Optimiza tu experiencia con Regedit</h1>
+      <p>Aprende a configurar la sensibilidad de Free Fire para mejorar tu puntería y tiempo de reacción.</p>
+    </section>
+
+   <!-- Ajuste Dinámico -->
+<section class="section sensitivity-simulator">
+  <h2>Simulador de Sensibilidad</h2>
+  <p>Modifica los valores y prueba diferentes configuraciones:</p>
+  <div class="slider-container">
+    <label for="general-sens">Puntería General: <span id="general-value">100</span></label>
+    <input type="range" id="general-sens" min="0" max="100" value="100">
+
+    <label for="scope2-sens">Mira por 2: <span id="scope2-value">85</span></label>
+    <input type="range" id="scope2-sens" min="0" max="100" value="85">
+
+    <label for="scope4-sens">Mira por 4: <span id="scope4-value">70</span></label>
+    <input type="range" id="scope4-sens" min="0" max="100" value="70">
+  </div>
+</section>
+
+<!-- Feedback -->
+<section class="section feedback-section">
+  <h2>Envíanos tu Feedback</h2>
+  <form id="feedback-form" class="centered-form">
+    <label for="username">Nombre:</label>
+    <input type="text" id="username" name="username" placeholder="Tu nombre" required />
+
+    <label for="feedback">Tu Opinión:</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Tu opinión" required></textarea>
+
+    <button type="submit" class="btn">Enviar Feedback</button>
+  </form>
+  <div id="feedback-response" class="hidden">
+    <p>¡Gracias por tu opinión! Nos ayudas a mejorar continuamente.</p>
+  </div>
+</section>
+
+<!-- Beneficios de usar Regedit -->
+<section class="section benefits">
+  <h2>Beneficios de Usar Regedit</h2>
+  <button id="toggle-benefits" class="btn">Mostrar/Ocultar Beneficios</button>
+  <ul id="benefits-list" class="hidden">
+    <li>Mejor precisión en disparos a la cabeza.</li>
+    <li>Respuesta más rápida al apuntar.</li>
+    <li>Mayor control sobre armas automáticas.</li>
+    <li>Experiencia personalizada según tus preferencias.</li>
+  </ul>
+</section>

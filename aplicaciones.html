@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicaciones - friifire</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="aplicaciones.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Friifire</div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="regedit.html">Regedit</a>
+      <a href="macro.html">Macro</a>
+      <a href="aplicaciones.html" class="active">Aplicaciones</a>
+      <a href="cuentas-veteranas.html">Cuentas veteranas</a>
+      <a href="generadores.html">Generadores</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-banner">
+      <h1>Las Mejores Aplicaciones para Free Fire</h1>
+      <p>Descubre las apps más útiles para optimizar tu experiencia en el juego.</p>
+    </section>
+
+    <!-- Buscador de Aplicaciones -->
+<section class="section search-apps">
+  <h2>Busca una Aplicación</h2>
+  <input type="text" id="search-bar" placeholder="Busca por nombre o funcionalidad..." />
+  <ul id="app-list"></ul>
+</section>
+
+<!-- Aplicaciones Destacadas -->
+<section class="section featured-apps">
+  <h2>Aplicaciones Recomendadas</h2>
+  <div class="apps-container">
+    <div class="app-card">
+      <h3>Game Booster</h3>
+      <p>Aumenta el rendimiento de tu dispositivo y reduce el lag.</p>
+      <div class="rating" data-app="game-booster">
+        ★★★☆☆
+      </div>
+      <a href="#" class="btn">Descargar</a>
+    </div>
+    <div class="app-card">
+      <h3>HUD Customizer</h3>
+      <p>Personaliza los controles y ajusta el HUD a tu estilo de juego.</p>
+      <div class="rating" data-app="hud-customizer">
+        ★★★★☆ 
+      </div>
+      <a href="#" class="btn">Descargar</a>
+    </div>
+    <div class="app-card">
+      <h3>Sensitivity Pro</h3>
+      <p>Optimiza la sensibilidad del juego con configuraciones avanzadas.</p>
+      <div class="rating" data-app="sensitivity-pro">
+        ★★★★☆
+      </div>
+      <a href="#" class="btn">Descargar</a>
+    </div>
+  </div>
+</section>
+
+<!-- Apps Más Populares -->
+<section class="section popular-apps">
+  <h2>Las Apps Más Populares</h2>
+  <div id="popular-apps-container"></div>
+</section>
